@@ -1,0 +1,70 @@
+
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:columnCount="3"
+    android:id="@+id/grid1"
+    android:layout_margin="10dp"
+    android:layout_centerHorizontal="true"
+    android:padding="4dp">
+
+
+    <TextView
+        android:minWidth="80dp"
+        android:text="Kenya"
+        android:textSize="20sp"
+        android:background="@drawable/back"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/textcolor"
+        android:clickable="true"
+        />
+    <TextView
+        android:minWidth="80dp"
+        android:text="UK"
+        android:textSize="20sp"
+        android:background="@drawable/back"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/textcolor"
+        android:clickable="true"
+        />
+    <TextView
+        android:minWidth="80dp"
+        android:text="Israel"
+        android:textSize="20sp"
+        android:background="@drawable/back"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/textcolor"
+        android:clickable="true"
+        />
+    <TextView
+        android:minWidth="80dp"
+        android:text="Nigeria"
+        android:textSize="20sp"
+        android:background="@drawable/back"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/textcolor"
+        android:clickable="true"
+        />
+    <TextView
+        android:minWidth="80dp"
+        android:text="Uganda"
+        android:textSize="20sp"
+        android:background="@drawable/back"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/textcolor"
+        android:clickable="true"
+        />
+
+</GridLayout>

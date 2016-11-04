@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_columnSpan="2"
+            android:text="Which is good for humid?"
+            android:textSize="24sp"
+            android:textColor="@color/textcolor"
+            android:layout_margin="10dp"
+
+            />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_columnSpan="2"
+            android:text="Nigeria or Japan"
+            android:textSize="21sp"
+            android:textStyle="italic"
+            android:textColor="@color/textcolor"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_columnSpan="2"
+            android:text="Japan?"
+            android:textSize="25sp"
+            android:textColor="@color/yellow"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/yes2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/back"
+            android:text="YES"
+            android:textSize="28sp"
+            android:textColor="#16ef0b"
+            android:onClick="next"/>
+
+        <Button
+            android:id="@+id/no3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/back"
+            android:text="NO"
+            android:textSize="28sp"
+            android:textColor="#f13304"
+            android:onClick="next"/>
+    </LinearLayout>
+
+</GridLayout>

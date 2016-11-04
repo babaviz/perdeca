@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_new"
+            android:icon="@android:drawable/ic_input_add"
+            android:title="New Session" />
+        <item android:id="@+id/nav_gallery"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:title="Draft" />
+        <item android:id="@+id/nav_Draft"
+            android:icon="@android:drawable/ic_dialog_email"
+            android:title="Rate me" />
+        <item android:id="@+id/nav_manage"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="About" />
+    </group>
+
+    <item android:title="Complete Sessions">
+        <menu>
+            <item android:id="@+id/nav_share"
+                android:icon="@android:drawable/ic_menu_share"
+                android:title="Session 1" />
+            <item android:id="@+id/nav_send"
+                android:icon="@android:drawable/ic_menu_share"
+                android:title="Session 2" />
+        </menu>
+    </item>
+
+</menu>

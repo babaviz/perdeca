@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"   >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Make Comparison"
+            android:textSize="32sp"
+            android:textColor="@color/textcolor"
+            android:layout_marginBottom="10dp"
+            />
+
+        <View
+            android:background="@color/yellow"
+            android:layout_width = "fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_centerVertical ="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/textcolor"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Which country is good for warmth?"
+            android:textStyle="italic"
+            android:textSize="18sp"
+            android:textColor="#8c61d1"
+            />
+
+        <include layout="@layout/options"></include>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Which country is good for sunny beaches?"
+            android:textStyle="italic"
+            android:textSize="18sp"
+            android:textColor="#8c61d1"
+            />
+
+        <include layout="@layout/options"></include>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Which country is good for humidity?"
+            android:textStyle="italic"
+            android:textSize="18sp"
+            android:textColor="#8c61d1"
+            />
+
+        <include layout="@layout/options"></include>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Which country is the coldest?"
+            android:textStyle="italic"
+            android:textSize="18sp"
+            android:textColor="#8c61d1"
+            />
+
+        <include layout="@layout/options"></include>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Which country is rainy?"
+            android:textStyle="italic"
+            android:textSize="18sp"
+            android:textColor="#8c61d1"
+            />
+
+        <include layout="@layout/options"></include>
+    </LinearLayout>
+
+
+</ScrollView>
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/back"
+            android:backgroundTint="#606364"
+            android:text="OPTIONS"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="@color/textcolor"
+            android:paddingRight="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:ems="10"
+            android:layout_marginBottom="14dp"
+            android:layout_marginTop="16dp"
+            />
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="@color/yellow"
+           android:layout_marginBottom="10dp"
+           android:layout_marginLeft="8dp"
+           android:layout_marginRight="8dp"
+           >
+
+       </View>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Enter option to add"
+               android:id="@+id/option_name"
+               android:gravity="center"
+               android:layout_marginLeft="20dp"
+               android:textColor="@color/textcolor"
+               android:background="@drawable/input"
+               android:backgroundTint="#3b3b3b"
+               android:textColorHint="#8df43a"
+               android:layout_marginRight="2dp"
+               android:layout_toLeftOf="@+id/optionadd"
+               android:layout_alignBottom="@+id/optionadd"
+               android:layout_alignTop="@+id/optionadd"
+               />
+        <Button
+            android:id="@+id/optionadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:text=""
+            android:textAlignment="center"
+            android:drawableLeft="@android:drawable/ic_input_add"
+            android:textColor="@color/textcolor"
+            android:layout_marginRight="22dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+
+            />
+    </RelativeLayout>
+       <TextView
+           android:id="@+id/counter"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="20dp"
+           android:padding="5dp"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:text="Added Options Will appear here, like"
+           android:textColor="@color/textcolor"/>
+           <LinearLayout
+               android:id="@+id/options_Layout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_gravity="center"
+               android:layout_marginRight="20dp"
+               android:layout_marginLeft="20dp"
+               >
+           <!--<TextView
+               android:id="@+id/temp_op"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Option 1"
+               android:textSize="20sp"
+               android:background="@drawable/back"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginBottom="10dp"
+               android:textColor="@color/textcolor"
+               />-->
+
+           </LinearLayout>
+
+     <!--  <Button
+           android:layout_height="wrap_content"
+           android:layout_width="match_parent"
+           android:text="Next"
+           android:layout_columnSpan="2"
+           android:layout_gravity="center"
+           android:minWidth="300dp"
+           android:textColor="@color/textcolor"
+           android:background="@drawable/whole"
+           android:id="@+id/enter_factors"
+           android:layout_marginTop="30dp"
+           android:layout_marginLeft="15dp"
+           android:layout_marginRight="15dp"
+           />-->
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

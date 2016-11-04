@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Create new session"
+    android:layout_above="@+id/ln"
+    android:layout_centerHorizontal="true"
+    android:gravity="center"
+    android:textStyle="bold"
+    android:textSize="32sp"
+    />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/yellow"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:id="@+id/ln"
+        android:layout_above="@+id/session_name"
+        >
+
+    </View>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/input"
+        android:hint="Session name"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:id="@+id/session_name"
+        android:textColor="@color/textcolor"
+        android:textColorHint="#98f546"
+        android:layout_above="@+id/session_add"
+        />
+
+    <Button
+        android:id="@+id/session_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:text="Create"
+        android:drawableRight="@android:drawable/ic_input_add"
+        android:drawablePadding="10dp"
+        android:textColor="@color/textcolor"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+
+        />
+
+</RelativeLayout>
