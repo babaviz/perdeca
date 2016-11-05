@@ -19,7 +19,18 @@
         android:textSize="32sp"
         android:layout_columnSpan="2"
         />
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/yellow"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_columnSpan="2"
+        />
+    <RelativeLayout
+        android:layout_columnSpan="2"
+        >
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -29,6 +40,8 @@
         android:textColor="@color/textcolor"
         android:textSize="25sp"/>
     <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/options"
         android:layout_margin="10dp"
         android:background="@drawable/input"
@@ -37,9 +50,8 @@
         android:textSize="25sp"
         android:text="5"
         android:gravity="center"
-        android:backgroundTint="#464646"
-        android:minWidth="100dp"
-
+        android:layout_toRightOf="@+id/tv2"
+        android:layout_alignParentRight="true"
         />
     <TextView
         android:layout_width="wrap_content"
@@ -51,6 +63,8 @@
         android:textSize="25sp"
         android:layout_below="@+id/tv2"/>
     <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/factors"
         android:layout_below= "@+id/tv2"
         android:layout_toRightOf="@+id/tv3"
@@ -60,10 +74,25 @@
         android:textSize="25sp"
         android:textColor="@color/textcolor"
         android:gravity="center"
-        android:backgroundTint="#464646"
         android:text="5"
         android:minWidth="100dp"
         />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preview Sample"
+            android:layout_columnSpan="2"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/textcolor"
+            android:background="@drawable/whole"
+            android:layout_marginTop="30dp"
+            android:id="@+id/sample"
+            android:layout_below="@id/factors"
+            />
+    </RelativeLayout>
     <!--<Button android:text="Next"
         android:layout_columnSpan="2"
         android:layout_gravity="center"
@@ -73,13 +102,5 @@
         android:id="@+id/details"
         android:layout_marginTop="30dp"
         />-->
-    <Button android:text="Preview Sample"
-        android:layout_columnSpan="2"
-        android:layout_gravity="center"
-        android:minWidth="300dp"
-        android:textColor="@color/textcolor"
-        android:background="@drawable/whole"
-        android:layout_marginTop="30dp"
-        android:id="@+id/sample"
-        />
+
 </GridLayout>

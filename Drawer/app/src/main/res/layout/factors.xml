@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
         <LinearLayout
+            android:id="@+id/top"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
 
@@ -18,7 +16,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:background="@drawable/back"
                 android:backgroundTint="#606364"
                 android:text="FACTORS"
                 android:gravity="center"
@@ -55,8 +52,7 @@
                     android:layout_toLeftOf="@+id/add_factor"
                     android:textColor="@color/textcolor"
                     android:background="@drawable/input"
-                    android:backgroundTint="#272c2e"
-                    android:textColorHint="#8df43a"
+                    android:textColorHint="#666666"
                     android:layout_alignBottom="@+id/add_factor"
                     android:layout_alignTop="@+id/add_factor"
                     />
@@ -64,7 +60,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:background="@drawable/back"
+                    android:background="@drawable/items"
                     android:layout_marginBottom="10dp"
                     android:layout_marginRight="20dp"
                     android:text="add"
@@ -84,17 +80,29 @@
                 android:text="Added Factors Will appear here, like"
                 android:textColor="@color/textcolor"
                 android:id="@+id/factor_info"/>
+        </LinearLayout>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top">
             <LinearLayout
-                android:layout_marginRight="20dp"
-                android:layout_marginLeft="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:columnCount="1"
                 android:id="@+id/factors_layout">
 
             </LinearLayout>
-
+        </ScrollView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btm_f"
+        />
             <!--<Button
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
@@ -110,6 +118,5 @@
                 android:layout_marginRight="15dp"
                 />-->
 
-        </LinearLayout>
-    </ScrollView>
-</LinearLayout>
+
+</RelativeLayout>
